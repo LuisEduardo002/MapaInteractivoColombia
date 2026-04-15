@@ -87,6 +87,8 @@ export function MapView({ species, selectedSpecies, onSpeciesSelect }: MapViewPr
           <h3 class="popup-title">${s.commonName}</h3>
           <p class="popup-scientific">${s.scientificName}</p>
           <span class="popup-category">${s.category}</span>
+          <p class="popup-description">${s.description}</p>
+          ${s.funFact ? `<div class="popup-funfact"><strong>¿Sabías que?</strong><br/>${s.funFact}</div>` : ''}
         </div>
       `;
 
@@ -181,6 +183,24 @@ export function MapView({ species, selectedSpecies, onSpeciesSelect }: MapViewPr
           border-radius: 6px;
           font-size: 11px;
           font-weight: 600;
+          margin-bottom: 10px;
+        }
+
+        .popup-description {
+          font-size: 12px;
+          color: #444;
+          margin: 0 0 12px 0;
+          line-height: 1.4;
+        }
+
+        .popup-funfact {
+          background-color: #f8faeb;
+          border-left: 3px solid #FFD700;
+          padding: 8px 10px;
+          border-radius: 4px;
+          font-size: 12px;
+          color: #2D5A27;
+          line-height: 1.4;
         }
         
         .leaflet-popup-content-wrapper {

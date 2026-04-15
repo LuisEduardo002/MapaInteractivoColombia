@@ -15,6 +15,7 @@ export interface Species {
   scientificName: string;
   category: SpeciesCategory;
   description: string;
+  funFact?: string;
   imageUrl: string;
   coordinates: {
     lat: number;
