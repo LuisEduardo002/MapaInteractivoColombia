@@ -11,7 +11,7 @@ export const speciesData: Species[] = [
     scientificName: "Panthera onca",
     category: "Mammal",
     description: "El felino más grande de América, habita en las selvas colombianas y es un depredador apex fundamental para el ecosistema.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Standing_jaguar.jpg/1200px-Standing_jaguar.jpg",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0a/Standing_jaguar.jpg",
     coordinates: { lat: 6.25, lng: -75.56 }
   },
   {
@@ -38,7 +38,7 @@ export const speciesData: Species[] = [
     scientificName: "Cattleya trianae",
     category: "Plant",
     description: "La flor nacional de Colombia, conocida como la 'Reina de las Orquideas' por su extraordinaria belleza.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/A_and_B_Larsen_orchridge_-_Cattleya_trianae_DSCN4311.JPG/1200px-A_and_B_Larsen_orchridge_-_Cattleya_trianae_DSCN4311.JPG",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/0f/Cattleya_trianae1.jpg",
     coordinates: { lat: 5.07, lng: -75.52 }
   },
   {
@@ -47,7 +47,7 @@ export const speciesData: Species[] = [
     scientificName: "Tremarctos ornatus",
     category: "Mammal",
     description: "El único oso de Sudamérica, llamado así por las marcas alrededor de sus ojos que asemejan anteojos.",
-    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Spectacled_Bear_-_Houston_Zoo.jpg/1200px-Spectacled_Bear_-_Houston_Zoo.jpg",
+    imageUrl: "https://upload.wikimedia.org/wikipedia/commons/9/99/Spectacled_Bear_-_Houston_Zoo.jpg",
     coordinates: { lat: 6.82, lng: -73.03 }
   },
   {

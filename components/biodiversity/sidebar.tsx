@@ -92,7 +92,7 @@ export function Sidebar({ species, selectedSpecies, onSpeciesSelect }: SidebarPr
       </div>
 
       {/* Species List */}
-      <ScrollArea className="flex-1 px-5">
+      <ScrollArea className="flex-1 min-h-0 px-5">
         <div className="space-y-3 pb-4">
           {filteredSpecies.map((s) => (
             <SpeciesCard
@@ -113,7 +113,7 @@ export function Sidebar({ species, selectedSpecies, onSpeciesSelect }: SidebarPr
 
       {/* Footer */}
       <footer className="p-4 text-center text-xs text-gray-500 border-t border-gray-200">
-        &copy; 2024 BioVisor Colombia &bull; Mockup
+        &copy; Mapa interactivo &bull; Esquema
       </footer>
     </aside>
   );

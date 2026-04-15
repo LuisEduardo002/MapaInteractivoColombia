@@ -81,6 +81,9 @@ export function MapView({ species, selectedSpecies, onSpeciesSelect }: MapViewPr
       // Create popup content
       const popupContent = `
         <div class="species-popup">
+          <div class="popup-image-container">
+            <img src="${s.imageUrl}" alt="${s.commonName}" class="popup-image" />
+          </div>
           <h3 class="popup-title">${s.commonName}</h3>
           <p class="popup-scientific">${s.scientificName}</p>
           <span class="popup-category">${s.category}</span>
@@ -137,30 +140,45 @@ export function MapView({ species, selectedSpecies, onSpeciesSelect }: MapViewPr
         
         .species-popup {
           font-family: 'Comfortaa', sans-serif;
-          min-width: 180px;
-          padding: 4px;
+          min-width: 200px;
+          padding: 2px;
+        }
+
+        .popup-image-container {
+          width: 100%;
+          height: 120px;
+          margin-bottom: 8px;
+          border-radius: 8px;
+          overflow: hidden;
+          background: #f0f0f0;
+        }
+
+        .popup-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
         
         .popup-title {
-          margin: 0 0 4px 0;
-          font-weight: 600;
-          font-size: 14px;
+          margin: 0 0 2px 0;
+          font-weight: 700;
+          font-size: 16px;
           color: #2D5A27;
         }
         
         .popup-scientific {
-          margin: 0 0 8px 0;
+          margin: 0 0 10px 0;
           font-style: italic;
           color: #666;
-          font-size: 12px;
+          font-size: 13px;
         }
         
         .popup-category {
           display: inline-block;
-          padding: 2px 10px;
-          background: #FFD700;
-          color: #2D5A27;
-          border-radius: 12px;
+          padding: 3px 12px;
+          background: #2D5A27;
+          color: white;
+          border-radius: 6px;
           font-size: 11px;
           font-weight: 600;
         }
